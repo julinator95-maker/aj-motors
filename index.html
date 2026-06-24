@@ -300,9 +300,9 @@
 </a>
 <script>
   const waBtn = document.getElementById('waBtn');
-  const footer = document.querySelector('.footer');
-  if (waBtn && footer) {
-    new IntersectionObserver(([e]) => waBtn.classList.toggle('hidden', e.isIntersecting)).observe(footer);
+  const footerBottom = document.querySelector('.footer-bottom');
+  if (waBtn && footerBottom) {
+    new IntersectionObserver(([e]) => waBtn.classList.toggle('hidden', e.isIntersecting)).observe(footerBottom);
   }
 </script>
 </body>
