@@ -886,6 +886,54 @@ select.fc option { background: var(--black-3); color: var(--white); }
   .c-aside-inner { padding: 28px 20px; }
 }
 
+/* ---- GEGENANGEBOT ---- */
+.gegen {
+  background: #111;
+  padding: 80px 0 60px;
+}
+.gegen-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.gegen-label {
+  color: rgba(255,255,255,0.45);
+}
+.gegen-headline {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(3rem, 10vw, 6rem);
+  font-weight: 800;
+  line-height: 0.95;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 16px 0 24px;
+  letter-spacing: -0.01em;
+}
+.gegen-star {
+  color: #c00;
+  font-size: 0.5em;
+  vertical-align: super;
+}
+.gegen-sub {
+  color: rgba(255,255,255,0.55);
+  font-size: 1rem;
+  margin-bottom: 32px;
+}
+.gegen-cta {
+  display: inline-flex;
+}
+.gegen-footnote {
+  color: rgba(255,255,255,0.25);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 20px;
+}
+@media (max-width: 600px) {
+  .gegen { padding: 60px 0 48px; }
+  .gegen-headline { font-size: clamp(2.8rem, 13vw, 4rem); }
+}
+
 /* ---- WHATSAPP STICKY ---- */
 .wa-btn {
   position: fixed;
