@@ -886,6 +886,36 @@ select.fc option { background: var(--black-3); color: var(--white); }
   .c-aside-inner { padding: 28px 20px; }
 }
 
+/* ---- WHATSAPP STICKY ---- */
+.wa-btn {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 20px 14px 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+  transition: background 0.2s, transform 0.2s;
+}
+.wa-btn:hover {
+  background: #25D366;
+  transform: translateY(-2px);
+}
+.wa-btn svg { flex-shrink: 0; }
+@media (max-width: 600px) {
+  .wa-btn { bottom: 20px; right: 20px; padding: 13px 16px 13px 13px; font-size: 0.8rem; }
+}
+
 /* ---- REDUCED MOTION ---- */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
