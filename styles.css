@@ -568,6 +568,7 @@ input, select, textarea, button { font-family: inherit; }
 .footer-bottom {
   padding-top: 28px; border-top: 1px solid var(--border);
   display: flex; justify-content: space-between; align-items: center;
+  padding-bottom: 100px;
 }
 .footer-bottom p { font-size: .745rem; color: rgba(255,255,255,.22); }
 .footer-bottom a { transition: color var(--ease); }
